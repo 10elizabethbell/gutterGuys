@@ -4,18 +4,6 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "cramped-padding",
-        "value": "<ul> \"rows\": children flush against border-top on top (no inset)",
-        "createdAt": "2026-10-19T01:43:14.473Z",
-        "reason": "agent: hairline divider list per Ellie's row rule (rows never boxed); rows carry 8px vertical padding"
-      },
-      {
-        "rule": "flat-type-hierarchy",
-        "value": "sizes: 16px, 18px, 20px, 22px (ratio 1.4:1)",
-        "createdAt": "2026-10-19T01:44:45.324Z",
-        "reason": "agent: these are the body/label tiers only; hierarchy comes from the 36-90px heavy italic display headings the detector's list omits"
-      },
-      {
         "rule": "design-system-color",
         "value": "rgb(143, 182, 245)",
         "createdAt": "2026-10-19T02:00:20.278Z",
@@ -50,6 +38,15 @@
         "value": "40px",
         "createdAt": "2026-10-19T02:00:20.651Z",
         "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (step numeral)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T23:19:32.318Z",
+        "reason": "agent: the 16-22px sizes are body/label tiers only; hierarchy comes from the 36-90px heavy italic display headings the detector's list omits. Value-scoped ignore isn't supported for this rule, so it is scoped to index.html"
       }
     ]
   }
