@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T01:58:52.518201+00:00",
+  "title": "Design System: Gutter Guys",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "neutral",
+        "displayName": "Rainy-Evening Navy",
+        "canonical": "#0c1a33",
+        "tonalRamp": [
+          "#050b18",
+          "#1b2537",
+          "#354259",
+          "#52627d",
+          "#7183a2",
+          "#95a6c3",
+          "#bacae5",
+          "#e1efff"
+        ]
+      },
+      "navy-2": {
+        "role": "neutral",
+        "displayName": "Deep Gutter Navy",
+        "canonical": "#10244a",
+        "tonalRamp": [
+          "#030a1e",
+          "#16253e",
+          "#304262",
+          "#4c6188",
+          "#6a83b0",
+          "#8ea6d0",
+          "#b4caf1",
+          "#dcefff"
+        ]
+      },
+      "navy-3": {
+        "role": "neutral",
+        "displayName": "Downspout Navy",
+        "canonical": "#163063",
+        "tonalRamp": [
+          "#010923",
+          "#122445",
+          "#2b416b",
+          "#466192",
+          "#6382bc",
+          "#88a5db",
+          "#afcafb",
+          "#d7f0ff"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Gutter Guys Royal",
+        "canonical": "#2563d9",
+        "tonalRamp": [
+          "#00003a",
+          "#001a64",
+          "#0a3992",
+          "#2359c2",
+          "#3c7bf2",
+          "#67a2ff",
+          "#91c8ff",
+          "#bdefff"
+        ]
+      },
+      "blue-press": {
+        "role": "primary",
+        "displayName": "Pressed Royal",
+        "canonical": "#1c4fb5",
+        "tonalRamp": [
+          "#000135",
+          "#011d5d",
+          "#153c89",
+          "#2d5cb7",
+          "#477de7",
+          "#6fa3ff",
+          "#99c9ff",
+          "#c4efff"
+        ]
+      },
+      "blue-hi": {
+        "role": "primary",
+        "displayName": "Rain-Light Blue",
+        "canonical": "#7fb0ff",
+        "tonalRamp": [
+          "#00072a",
+          "#07234f",
+          "#1f4077",
+          "#3860a1",
+          "#5482cd",
+          "#7ba6eb",
+          "#a3cbff",
+          "#cdf0ff"
+        ]
+      },
+      "leaf": {
+        "role": "secondary",
+        "displayName": "Wet Leaf Amber",
+        "canonical": "#e7a23b",
+        "tonalRamp": [
+          "#1e0200",
+          "#401900",
+          "#643500",
+          "#8b5200",
+          "#b47200",
+          "#d49841",
+          "#f5be75",
+          "#ffe5a6"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Burnt Leaf",
+        "canonical": "#b96f14",
+        "tonalRamp": [
+          "#1f0000",
+          "#421600",
+          "#673200",
+          "#8f4f00",
+          "#b86e14",
+          "#d89450",
+          "#f9bb80",
+          "#ffe2af"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Washed Mist",
+        "canonical": "#e8eff8",
+        "tonalRamp": [
+          "#070b11",
+          "#20262c",
+          "#3d434a",
+          "#5c6269",
+          "#7d838b",
+          "#9fa6ae",
+          "#c3cad3",
+          "#e8eff8"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Trough White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Rain Ink",
+        "canonical": "#eef3fb",
+        "tonalRamp": [
+          "#080b10",
+          "#22252b",
+          "#3e4249",
+          "#5d6168",
+          "#7e838a",
+          "#a1a5ad",
+          "#c5c9d1",
+          "#eaeff7"
+        ]
+      },
+      "ink-dim": {
+        "role": "neutral",
+        "displayName": "Dim Rain Ink",
+        "canonical": "#b4c4de",
+        "tonalRamp": [
+          "#060b15",
+          "#1d2533",
+          "#384254",
+          "#556277",
+          "#74839b",
+          "#98a6bc",
+          "#bdcadf",
+          "#e4efff"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "#0f2140",
+        "tonalRamp": [
+          "#030b1b",
+          "#18253b",
+          "#32425d",
+          "#4e6282",
+          "#6d83a9",
+          "#91a6c9",
+          "#b7caeb",
+          "#def0ff"
+        ]
+      },
+      "ink-dark-dim": {
+        "role": "neutral",
+        "displayName": "Dim Slate Ink",
+        "canonical": "#3b5378",
+        "tonalRamp": [
+          "#020b1c",
+          "#16253c",
+          "#30435f",
+          "#4c6284",
+          "#6a84ab",
+          "#8ea6cc",
+          "#b4cbed",
+          "#dcf0ff"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Mist Rule",
+        "canonical": "#c3d1e4",
+        "tonalRamp": [
+          "#060b13",
+          "#1e262f",
+          "#3a434f",
+          "#576271",
+          "#778395",
+          "#9aa6b6",
+          "#bfcad9",
+          "#e6effd"
+        ]
+      },
+      "rule-on-navy": {
+        "role": "neutral",
+        "displayName": "Navy Rule",
+        "canonical": "rgba(127,176,255,.22)",
+        "tonalRamp": [
+          "#00072a",
+          "#07234f",
+          "#1f4077",
+          "#3860a1",
+          "#5482cd",
+          "#7ba6eb",
+          "#a3cbff",
+          "#cdf0ff"
+        ]
+      },
+      "field-steel": {
+        "role": "neutral",
+        "displayName": "Field Steel",
+        "canonical": "#8597b4",
+        "tonalRamp": [
+          "#050b17",
+          "#1b2535",
+          "#364257",
+          "#53627a",
+          "#72839f",
+          "#96a6c0",
+          "#bbcae2",
+          "#e2efff"
+        ]
+      },
+      "error-brick": {
+        "role": "error",
+        "displayName": "Brick",
+        "canonical": "#a3261b",
+        "tonalRamp": [
+          "#280000",
+          "#4f0000",
+          "#781a11",
+          "#a4362a",
+          "#d15445",
+          "#f27e6e",
+          "#ffa898",
+          "#ffd2c3"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 6.6vw / 6rem cap at 1024px+."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s."
+      },
+      "subhead": {
+        "displayName": "Subhead",
+        "purpose": "h3s inside a section."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, benefit items, step leads."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The line under a headline, dim ink."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base text and form text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Trust line, chips, footer, validation; the 16px floor."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 6px 16px -8px rgba(3,10,24,.6)",
+        "purpose": "Filled primary buttons only."
+      },
+      {
+        "name": "logo-disc",
+        "value": "0 4px 14px -4px rgba(0,0,0,.5)",
+        "purpose": "Header logo disc only."
+      }
+    ],
+    "focus": [
+      {
+        "name": "focus-navy",
+        "value": "outline: 3px solid #e7a23b; outline-offset: 3px",
+        "purpose": "Default focus on navy grounds."
+      },
+      {
+        "name": "focus-mist",
+        "value": "outline: 3px solid #b96f14",
+        "purpose": "Focus and hover outline on mist grounds: inputs, chips, submit."
+      },
+      {
+        "name": "focus-row-arrow",
+        "value": "outline: 3px solid #2563d9; outline-offset: 3px",
+        "purpose": "Keyboard focus on a service row, drawn on the arrow only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": ".18s",
+        "purpose": "Button, arrow and icon color transitions."
+      },
+      {
+        "name": "field",
+        "value": ".15s",
+        "purpose": "Input and chip stroke/outline transitions."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s, translateY(1px)",
+        "purpose": "Button press."
+      },
+      {
+        "name": "water-seam",
+        "value": "three sine strokes (#2563d9 5px, #7fb0ff 3px, #4f8ff0 4px), SPEED 1.15, paused off-screen, static under reduced motion",
+        "purpose": "Every section change."
+      },
+      {
+        "name": "gutter-scene",
+        "value": "canvas CFG: LEAF_DENSITY .34 / .26 wide, REGROW 1.5/s, PUSH_R 46px, BREAK 20px, SPRING 38, DAMP 6.5, GRAVITY 430, RAIN .16/px, GHOST_EVERY 5.5s, GHOST_SPAN .32, BIN 18px, SHEET_AT 4",
+        "purpose": "Hero interactive scene; self-plays until touched."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 399px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ],
+    "seams": {
+      "heightPhone": "64px",
+      "heightWide": "100px"
+    },
+    "sceneLeafColors": [
+      "#d98a2b",
+      "#c2602a",
+      "#e2b23f",
+      "#8a5a2e",
+      "#a8432a",
+      "#7d7f3a",
+      "#b8762f",
+      "#9c4b25"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Royal filled action: quote, Facebook, submit.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a free quote</a></div>",
+      "css": ".ds-dark{background:#0c1a33;padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:14px;font:800 18px/1.1 -apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .18s,border-color .18s,color .18s,transform .12s}.ds-btn:active{transform:translateY(1px)}.ds-btn-primary{background:#2563d9;color:#fff;border-color:#2563d9;box-shadow:0 6px 16px -8px rgba(3,10,24,.6)}.ds-btn-primary:hover{background:#1c4fb5;border-color:#1c4fb5}.ds-btn-primary:focus-visible{outline:3px solid #e7a23b;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Outlined companion action on navy only.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><rect x=\"3\" y=\"6\" width=\"18\" height=\"13\" rx=\"3\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"12.5\" r=\"3.4\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8.5 6 10 3.8h4L15.5 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>Text us a photo</a></div>",
+      "css": ".ds-dark{background:#0c1a33;padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:14px;font:800 18px/1.1 -apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .18s,border-color .18s,color .18s,transform .12s}.ds-btn:active{transform:translateY(1px)}.ds-btn-ghost{color:#eef3fb;border-color:#8fb6f5;background:transparent}.ds-btn-ghost:hover{border-color:#fff;background:rgba(127,176,255,.12)}.ds-btn-ghost:focus-visible{outline:3px solid #e7a23b;outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "tel-link",
+      "description": "Logo disc and name left, phone number right; never sticky.",
+      "html": "<div class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-disc\"></span><span>Gutter Guys</span></a><a class=\"ds-tel\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M6.6 3.5 9 3.1l1.7 4.4-2.1 1.6a12 12 0 0 0 6.3 6.3l1.6-2.1 4.4 1.7-.4 2.4a2.4 2.4 0 0 1-2.5 2A16.5 16.5 0 0 1 4.6 6a2.4 2.4 0 0 1 2-2.5Z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>519-991-2813</a></div>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:#163063;color:#eef3fb;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit;min-height:44px}.ds-disc{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 4px 14px -4px rgba(0,0,0,.5)}.ds-brand span:last-child{font-weight:900;font-style:italic;text-transform:uppercase;font-size:18px;letter-spacing:-.01em}.ds-tel{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-weight:800;font-size:16px;color:inherit;text-decoration:none;font-variant-numeric:tabular-nums}.ds-tel svg{color:#7fb0ff;transition:color .18s}.ds-tel:hover svg{color:#e7a23b}.ds-tel:focus-visible,.ds-brand:focus-visible{outline:3px solid #e7a23b;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Rows",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Hairline-divided rows; only the circular arrow responds to hover and focus.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Gutters &amp; eavestroughs<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Downspout flushing<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Roof cleaning<span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul>",
+      "css": ".ds-rows{list-style:none;margin:0;padding:16px;background:#e8eff8;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-rows li{border-bottom:1px solid #c3d1e4}.ds-rows li:first-child{border-top:1px solid #c3d1e4}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:#0f2140;font-weight:800;font-size:20px;line-height:1.35}.ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none}.ds-arrow{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:2px solid #c3d1e4;color:#0f2140;transition:background-color .18s,border-color .18s,color .18s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#2563d9;border-color:#2563d9;color:#fff}.ds-row:focus-visible .ds-arrow{outline:3px solid #2563d9;outline-offset:3px}"
+    },
+    {
+      "name": "Service Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Checkbox/radio chips; amber outline on hover/focus, navy fill with amber check when selected.",
+      "html": "<div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Roof cleaning</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Moss removal</span></label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;padding:16px;background:#e8eff8;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;color:#0f2140}.ds-chip{position:relative}.ds-chip input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border-radius:12px;background:#fff;border:2px solid #8597b4;font-weight:700;font-size:16px;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s;outline:3px solid transparent;outline-offset:1px}.ds-chip span svg{display:none}.ds-chip:hover span,.ds-chip input:focus-visible + span{outline:3px solid #b96f14;border-color:#b96f14}.ds-chip input:checked + span{background:#10244a;border-color:#10244a;color:#fff}.ds-chip input:checked + span svg{display:block;color:#e7a23b}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "White field, steel stroke, burnt-leaf outline on hover and focus; brick on error.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Street and town</label><input id=\"ds-n\" type=\"text\" placeholder=\"Street address, town\"><p class=\"ds-err\">Please add your street and town so we can quote the right house.</p></div>",
+      "css": ".ds-field{display:grid;gap:8px;padding:16px;background:#e8eff8;color:#0f2140;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-field label{font-weight:800;font-size:18px}.ds-field input{width:100%;box-sizing:border-box;font:500 18px/1.4 -apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif;color:#0f2140;background:#fff;border:2px solid #8597b4;border-radius:12px;padding:14px;min-height:54px;transition:border-color .15s,outline-color .15s;outline:3px solid transparent;outline-offset:1px}.ds-field input::placeholder{color:#5b6f8f}.ds-field input:hover,.ds-field input:focus{outline:3px solid #b96f14;border-color:#b96f14}.ds-err{margin:0;color:#a3261b;font-weight:700;font-size:16px}"
+    },
+    {
+      "name": "Benefits and Steps",
+      "kind": "custom",
+      "refersTo": "title",
+      "description": "Two-column hairline benefits; italic numeral steps on navy.",
+      "html": "<div class=\"ds-why\"><ul class=\"ds-ben\"><li>Protects your home</li><li>Prevents mold &amp; mildew</li></ul><ol class=\"ds-steps\"><li><div><b>Send us a photo or give us a call.</b><span>We'll get back to you with a free quote.</span></div></li><li><div><b>We clean up the ground before we go.</b><span>No leaves, no muck, no mess left behind.</span></div></li></ol></div>",
+      "css": ".ds-why{background:#10244a;color:#eef3fb;padding:24px;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-ben{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.ds-ben li{padding:12px 0;border-top:1px solid rgba(127,176,255,.22);font-weight:800;font-size:20px;line-height:1.35}.ds-steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:20px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;font-size:18px;line-height:1.4}.ds-steps li::before{counter-increment:s;content:counter(s);font-weight:900;font-style:italic;font-size:40px;line-height:.9;color:#7fb0ff}.ds-steps b{display:block;font-size:20px}.ds-steps span{color:#b4c4de}"
+    },
+    {
+      "name": "Display Heading",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "900 italic uppercase heading, second line in Rain-Light Blue.",
+      "html": "<div class=\"ds-hero\"><h1 class=\"ds-display\"><span>Clean gutters.</span> <span class=\"ds-b\">Protect your home.</span></h1><p class=\"ds-lede\">We work on your roof like it's our own.</p></div>",
+      "css": ".ds-hero{background:linear-gradient(180deg,#183466 0%,#0f2246 38%,#0c1a33 72%);color:#eef3fb;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,\"SF Pro Display\",\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-display{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;margin:0;font-size:clamp(2.15rem,9.4vw,5.6rem);text-wrap:balance}.ds-display span{display:block}.ds-b{color:#7fb0ff}.ds-lede{margin:16px 0 0;font-size:clamp(18px,4.8vw,20px);line-height:1.5;color:#b4c4de;max-width:34ch}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Drainage Path",
+    "overview": "The page is a house's drainage system on a rainy autumn evening. Water enters at the roofline in the hero, where a leaf-packed aluminium eavestrough overflows until the visitor clears it with a finger or mouse; it then runs down the page through animated water seams between sections and ends at the quote form. Every section is a stretch of that path, alternating between rainy-evening navy and a pale washed-mist ground.\n\nThe system is plain and loud the way a crew's truck lettering is plain and loud: heavy italic uppercase headings echoing the logo badge, one royal blue for action, and wet autumn leaves (amber, rust, brown) as the only warm color. Density is phone-first and one-handed: big tap targets (44px floor, 58px buttons), full-width actions on phone, single column until 1024px.\n\nIt rejects the category default: no stock-photo hero, no blue checkmark list, no \"Call Now\" banner or sticky call bar. Proof is the visitor doing the job, not a claimed photo.",
+    "keyCharacteristics": [
+      "Navy ground that is never black; light sections are mist, never pure white.",
+      "Heavy (900) italic uppercase display lettering with tight tracking.",
+      "One action blue; amber leaf is the only warm hue and doubles as the focus and selection color.",
+      "Animated water seams join every section change.",
+      "Lists are hairline-divided rows, never boxed cards.",
+      "The hero is an interactive canvas scene, not an image."
+    ],
+    "rules": [
+      {
+        "name": "The Never-Black Rule",
+        "body": "The darkest ground is Rainy-Evening Navy. No #000 surfaces or text anywhere, including the scene.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Warm Color Rule",
+        "body": "Amber belongs to the leaves. It appears in the UI only as focus, selection, caret and the selected-chip check; it is never a button, banner or section fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Sections alternate navy / mist, and every change between them is a water seam, never a hard edge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout-Then-Speak Rule",
+        "body": "Headings are always 900 italic uppercase; nothing below a heading is uppercase or italic. There are no small-caps labels, eyebrows or tracked-out kickers.",
+        "section": "typography"
+      },
+      {
+        "name": "The Numeral Rule",
+        "body": "Step numbers are 40px 900 italic numerals in Rain-Light Blue, set in a 44px gutter column; never circles or badges.",
+        "section": "typography"
+      },
+      {
+        "name": "The First-Screen Rule",
+        "body": "On the first phone screen: the phone number top-right, headline, one-line promise, both quote actions, and the moving scene. No sticky bottom call bar, ever; the header number and the actions carry calling.",
+        "section": "layout"
+      },
+      {
+        "name": "The Water-Not-Walls Rule",
+        "body": "Sections are separated by animated water seams (64px phone, 100px at 760px): three sine-driven strokes in Royal, Rain-Light and a mid blue over the next section's fill, paused off-screen and static under reduced motion. Never a straight border or a shadow between sections.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep every ground navy or mist; the darkest value is #0c1a33.",
+      "**Do** set every heading 900 italic uppercase with -0.02em tracking and 0.95 line height, and everything else in sentence case.",
+      "**Do** join every navy/mist change with an animated water seam that pauses off-screen and stops under reduced motion.",
+      "**Do** use Royal for every primary action and reserve amber for focus, selection and the selected-chip check.",
+      "**Do** use Burnt Leaf (#b96f14) for focus and hover outlines on mist and Wet Leaf (#e7a23b) on navy.",
+      "**Do** keep tap targets at 44px minimum and buttons at 58px.",
+      "**Do** keep text at 16px minimum."
+    ],
+    "donts": [
+      "**Don't** use black (#000) for any surface or text.",
+      "**Don't** add a sticky or fixed bottom call bar.",
+      "**Don't** put a phone number on the first screen anywhere but top-right of the header.",
+      "**Don't** show an email address anywhere; when one is known it goes in the footer only.",
+      "**Don't** outline, box, shade or fill a service row on hover or focus; only its arrow responds.",
+      "**Don't** wrap lists in cards or add checkmark or icon bullets to benefits.",
+      "**Don't** add eyebrows, kickers or small uppercase labels above headings.",
+      "**Don't** use amber as a fill for buttons, banners or sections.",
+      "**Don't** separate sections with straight borders or shadows."
+    ]
+  }
+}

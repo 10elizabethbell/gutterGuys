@@ -44,9 +44,14 @@
 - Overflow drips could get round heads so they read less like rain.
 - A desktop-only "or text 519-991-2813" under the photo button (it does nothing without a phone), but that would show the number twice on screen.
 - Seasonal headline swap (fall: "Leaves in the gutter?").
+- Audience age isn't in the brief. If the owner says most customers are 50+, switch to `older-audience.md` (still scene, no self-play).
+
+## Review status
+- Impeccable: detector run (two findings left on purpose, with ignores recorded in `.impeccable/config.json`: the hairline row divider and body-tier type sizes). An all-modes sweep (critique, audit, polish, distill, harden, clarify, adapt, optimize, typeset, layout, colorize, animate, delight, bolder, quieter, overdrive) with its fixes applied. Finish reviewer: two rounds. Round 1 fixes were scored 6 resolved, 1 partial. Round 2 fixes (overflow as translucent sheets that break into drops, the desktop downspout outlet above the fold, the repeated "our own" line removed) were applied but **not re-scored** (the unattended budget is two rounds).
+- The finishing-rules checklist was re-checked after the sweep.
 
 ## Not verified
-- Real-device touch (iOS Safari, Android Chrome, Facebook in-app browser). Headless touch and mouse sweeps worked, and WebKit renders correctly.
+- Real-device touch (iOS Safari, Android Chrome, Facebook in-app browser). A Chromium CDP touch drag cleared 127→0 leaves without scrolling the page, and the mouse sweep worked. WebKit renders correctly, but its synthetic touch couldn't be driven.
 - The real SMS handoff opening Messages with the body on iOS and Android.
 - Frame rate on older phones (phone draws ~125 leaves + ~60 rain streaks; one shared loop that pauses off screen).
 - The Facebook og preview on a real post (og image is set, but FB's scraper cache wasn't checked).
