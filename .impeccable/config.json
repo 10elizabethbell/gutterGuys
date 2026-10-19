@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "<ul> \"rows\": children flush against border-top on top (no inset)",
+        "createdAt": "2026-10-19T01:43:14.473Z",
+        "reason": "agent: hairline divider list per Ellie's row rule (rows never boxed); rows carry 8px vertical padding"
+      }
+    ]
+  }
+}
