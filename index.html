@@ -113,9 +113,8 @@ section{padding:44px 0 56px}
 /* why + steps (dark) */
 .dark{background:var(--navy-2)}
 .why .lede{font-size:clamp(18px,4.8vw,20px);color:var(--ink-dim);margin:16px 0 26px;max-width:40ch}
-.benefits{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.benefits li{display:flex;align-items:center;gap:14px;font-weight:800;font-size:20px;line-height:1.35}
-.benefits svg{flex:none;color:var(--blue-hi)}
+.benefits{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.benefits li{padding:12px 0;border-top:1px solid rgba(127,176,255,.22);font-weight:800;font-size:20px;line-height:1.35}
 .steps-h{font-size:clamp(1.6rem,6.4vw,2.4rem);margin-top:52px}
 .steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:20px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;font-size:18px;line-height:1.4}
@@ -127,10 +126,10 @@ section{padding:44px 0 56px}
 .fb{margin-top:20px;max-width:520px;font-size:18px}
 @media (min-width:1024px){
   .why .wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:72px}
-  .why .intro{grid-column:1}
-  .why .how{grid-column:2;grid-row:1 / span 2}
+  .why .intro{grid-column:1;grid-row:1 / span 2}
+  .why .how{grid-column:2;grid-row:1}
   .steps-h{margin-top:0}
-  .more{grid-column:1;margin-top:44px}
+  .more{grid-column:2;grid-row:2;margin-top:44px}
 }
 
 /* quote form */
@@ -197,7 +196,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <span>Gutter Guys</span>
     </a>
     <a class="tel" href="tel:+15199912813" aria-label="Call Gutter Guys at 519-991-2813">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 3.5 9 3.1l1.7 4.4-2.1 1.6a12 12 0 0 0 6.3 6.3l1.6-2.1 4.4 1.7-.4 2.4a2.4 2.4 0 0 1-2.5 2A16.5 16.5 0 0 1 4.6 6a2.4 2.4 0 0 1 2-2.5Z" fill="currentColor"/></svg>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 3.5 9 3.1l1.7 4.4-2.1 1.6a12 12 0 0 0 6.3 6.3l1.6-2.1 4.4 1.7-.4 2.4a2.4 2.4 0 0 1-2.5 2A16.5 16.5 0 0 1 4.6 6a2.4 2.4 0 0 1 2-2.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
       519-991-2813
     </a>
   </div>
@@ -243,12 +242,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="intro">
       <h2 class="display" id="why-h">Don't wait for the damage</h2>
-      <p class="lede">A clogged gutter spills over every time it rains. We keep the water flowing where it should.</p>
+      <p class="lede">We keep the water off your walls and away from your foundation, the way we would at our own place.</p>
       <ul class="benefits">
-        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Protects your home</li>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Prevents mold &amp; mildew</li>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Improves drainage</li>
-        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Extends the life of your roof</li>
+        <li>Protects your home</li>
+        <li>Prevents mold &amp; mildew</li>
+        <li>Improves drainage</li>
+        <li>Extends the life of your roof</li>
       </ul>
     </div>
     <div class="how">
@@ -303,7 +302,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <textarea id="notes" name="notes" maxlength="500" placeholder="Overflowing in one corner, a sagging section, when you're home…"></textarea>
       </div>
       <button class="btn btn-primary submit" type="submit">Text my quote request</button>
-      <p class="after">This opens a text to Gutter Guys with your answers filled in. Rather talk? Call <a href="tel:+15199912813">519-991-2813</a> or <a href="tel:+15197781752">519-778-1752</a>.</p>
+      <p class="after">This opens a text to Gutter Guys with your answers filled in.</p>
       <p class="sent" id="sent" role="status"></p>
     </form>
   </div>
@@ -357,12 +356,13 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     RAIN: 0.16,          // rain streaks per px of width
     GHOST_EVERY: 5.5,    // s between self-play sweeps until touched
     GHOST_SPAN: 0.32,    // share of the gutter each self-play sweep clears
-    BIN: 18              // px per drainage bin
+    BIN: 18,             // px per drainage bin
+    SHEET_AT: 4          // leaves in a bin before water sheets over the lip
   };
   var cv = document.getElementById('gutter'); if (!cv) return;
   var ctx = cv.getContext('2d');
   var W = 0, H = 0, dpr = 1, phone = true, G = {}, bg, fg, sprites = [];
-  var leaves = [], rain = [], drips = [], splash = [];
+  var leaves = [], rain = [], drips = [], splash = [], glints = [], sheets = [];
   var t = 0, regrowAcc = 0, touched = false, ghost = null, ghostT = 2.2;
   var ptr = { on:false, cx:0, cy:0, x:-999, y:-999, px:-999, py:-999, vx:0, vy:0 };
   var rnd = Math.random;
@@ -410,12 +410,12 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
     var gh = phone ? 34 : 48;
     G.gh = gh;
-    G.gy = Math.round(H - (phone ? 146 : 236));          // gutter sits a fixed distance above the hero's foot
+    G.gy = Math.round(H - (phone ? 146 : Math.min(210, H * 0.42)));          // gutter sits a fixed distance above the hero's foot
     G.roofTop = G.gy - Math.min(G.gy * 0.8, phone ? 150 : 250);
     G.pw = phone ? 20 : 26;
     G.px = W - (phone ? 52 : Math.max(120, W * 0.09));
-    G.gx0 = -12; G.gx1 = G.px + G.pw + 8;
-    G.outY = H - (phone ? 30 : 40);
+    G.gx0 = -12; G.gx1 = G.px + G.pw + 16;
+    G.outY = H - (phone ? 30 : 72);
     G.leafS = phone ? 19 : 25;
     G.nb = Math.ceil((G.gx1) / CFG.BIN);
     buildStatic();
@@ -430,7 +430,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     // roof: 3-tab shingle courses, foreshortened and darker toward the ridge
     var top = G.roofTop, bot = gy - 6, span = bot - top;
     var rows = phone ? 6 : 7, weights = [], sum = 0;
-    for (var i = 0; i < rows; i++){ var wgt = Math.pow(0.86, rows - 1 - i); weights.push(wgt); sum += wgt; }
+    for (var i = 0; i < rows; i++){ var wgt = Math.pow(0.76, rows - 1 - i); weights.push(wgt); sum += wgt; }
     var y0 = top;
     for (var i = 0; i < rows; i++){
       var rowH = span * weights[i] / sum, depth = i / (rows - 1);
@@ -461,8 +461,9 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     g.globalCompositeOperation = 'source-over';
     // drip edge + fascia
     g.fillStyle = '#c8d1dd'; g.fillRect(0, bot - 2, W, 4);
-    g.fillStyle = '#9ea9b8'; g.fillRect(0, bot + 2, W, gy + gh - bot);
-    // siding wall below
+    g.fillStyle = '#9ea9b8'; g.fillRect(0, bot + 2, G.gx1, gy + gh - bot);
+    g.fillStyle = '#1d3256'; g.fillRect(G.gx1, bot + 2, W - G.gx1, gy + gh - bot);
+    // siding wall below (and the corner trim past the gutter's end)
     var wy = gy + gh + 6, bh = phone ? 17 : 21;
     g.fillStyle = '#1d3256'; g.fillRect(0, gy + gh - 2, W, H - gy - gh + 2);
     g.fillStyle = '#0f1f3b'; g.fillRect(0, gy + gh - 2, W, 8);
@@ -472,6 +473,8 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       g.fillStyle = gr; g.fillRect(0, y, W, bh - 2);
       g.fillStyle = 'rgba(5,14,32,.55)'; g.fillRect(0, y + bh - 2, W, 2);
     }
+    g.fillStyle = '#2c4877'; g.fillRect(G.gx1 + 6, bot + 2, phone ? 10 : 14, H - bot);
+    g.fillStyle = 'rgba(5,14,32,.5)'; g.fillRect(G.gx1 + 6 + (phone ? 10 : 14), bot + 2, 2, H - bot);
     var sh = g.createLinearGradient(0, gy + gh, 0, gy + gh + 40);
     sh.addColorStop(0, 'rgba(5,12,28,.6)'); sh.addColorStop(1, 'rgba(5,12,28,0)');
     g.fillStyle = sh; g.fillRect(0, gy + gh, W, 40);
@@ -488,7 +491,11 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     f.fillStyle = face; f.fillRect(G.gx0, gy, G.gx1 - G.gx0, gh);
     f.fillStyle = 'rgba(40,55,80,.28)'; f.fillRect(G.gx0, gy + gh - 2, G.gx1 - G.gx0, 2);
     // end cap
-    f.fillStyle = '#b9c3d0'; f.fillRect(G.gx1 - 6, gy - 3, 6, gh + 3);
+    var cap = f.createLinearGradient(0, gy, 0, gy + gh);
+    cap.addColorStop(0, '#f4f6f9'); cap.addColorStop(.5, '#c9d1dc'); cap.addColorStop(1, '#8e9aac');
+    f.fillStyle = cap; f.beginPath(); f.moveTo(G.gx1 - 8, gy - 3); f.lineTo(G.gx1 - 2, gy - 3);
+    f.quadraticCurveTo(G.gx1 + 4, gy - 3, G.gx1 + 4, gy + 6); f.lineTo(G.gx1 + 4, gy + gh - 6);
+    f.quadraticCurveTo(G.gx1 + 4, gy + gh, G.gx1 - 2, gy + gh); f.lineTo(G.gx1 - 8, gy + gh); f.closePath(); f.fill();
     // hangers
     f.fillStyle = 'rgba(70,85,110,.35)';
     for (var hx = 40; hx < G.gx1 - 20; hx += phone ? 80 : 120) f.fillRect(hx, gy, 3, 5);
@@ -522,7 +529,8 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     rain = [];
     var rn = Math.round(W * CFG.RAIN * (phone ? 0.8 : 1));
     for (var j = 0; j < rn; j++) rain.push({ x:rnd() * W, y:rnd() * G.gy, v:520 + rnd() * 260, l:8 + rnd() * 12, a:0.12 + rnd() * 0.18 });
-    drips = []; splash = [];
+    drips = []; splash = []; glints = []; sheets = new Array(G.nb).fill(0);
+    for (var gq = 0; gq < Math.round(G.gx1 / 40); gq++) glints.push({ x:rnd() * G.gx1, l:6 + rnd() * 24, o:rnd() * 3 - 1.5, a:0.3 + rnd() * 0.5, v:50 + rnd() * 40 });
   }
 
   function push(px, py, pvx, pvy, dt){
@@ -597,7 +605,10 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     var clear = 0; G.bins = bins;
     for (var b2 = 0; b2 < G.nb; b2++){
       if (bins[b2] < 2) clear++;
-      else if (rnd() < dt * (phone ? 1.4 : 1.1)) drips.push({ x:b2 * CFG.BIN + rnd() * CFG.BIN, y:G.gy + 1, vy:20 + rnd() * 40, l:5 + rnd() * 6 });
+      var full = bins[b2] >= CFG.SHEET_AT;
+      sheets[b2] = Math.max(0, Math.min(1, sheets[b2] + (full ? dt * 3 : -dt / 0.4)));
+      if (bins[b2] >= 2 && rnd() < dt * (phone ? 1.4 : 1.1)) drips.push({ x:b2 * CFG.BIN + rnd() * CFG.BIN, y:G.gy + 1, vy:20 + rnd() * 40, l:5 + rnd() * 6 });
+      if (sheets[b2] > 0.3 && rnd() < dt * 6 * sheets[b2]) splash.push({ x:b2 * CFG.BIN + rnd() * CFG.BIN, y:H - 2, vx:(rnd() - 0.5) * 60, vy:-(40 + rnd() * 80), life:0.4 });
     }
     G.clear = clear / G.nb;
     for (var k = drips.length - 1; k >= 0; k--){
@@ -609,6 +620,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
       var p = rain[r]; p.y += p.v * dt; p.x -= p.v * 0.08 * dt;
       if (p.y > G.gy - 4){ p.y = -20 - rnd() * 40; p.x = rnd() * (W + 40); }
     }
+    for (var gk = 0; gk < glints.length; gk++){ var gg = glints[gk]; gg.x += gg.v * dt; if (gg.x > G.px + G.pw / 2) { gg.x = rnd() * G.px * 0.3; } }
     var flow = Math.sqrt(G.clear);
     if (rnd() < flow * dt * 30) splash.push({ x:G.px - G.pw * 0.9 - 14 - rnd() * 18 * flow, y:H - 2, vx:-(20 + rnd() * 80), vy:-(60 + rnd() * 120), life:0.5 });
     for (var s = splash.length - 1; s >= 0; s--){ var q = splash[s]; q.vy += 700 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.life -= dt; if (q.life <= 0) splash.splice(s, 1); }
@@ -629,18 +641,49 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     ctx.drawImage(bg, 0, 0);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     // water running along the clear stretches of the trough toward the downspout
-    var gy = G.gy;
+    var gy = G.gy, BIN = CFG.BIN;
     for (var b = 0; b < G.nb; b++){
       if (G.bins && G.bins[b] >= 2) continue;
-      var x0 = b * CFG.BIN;
-      ctx.fillStyle = 'rgba(96,160,240,.75)'; ctx.fillRect(x0, gy - 7, CFG.BIN + 0.5, 6);
-      var ph = ((x0 - t * 70) % 26 + 26) % 26;
-      ctx.fillStyle = 'rgba(220,236,255,.8)'; ctx.fillRect(x0 + ph * 0.6, gy - 6 + (b % 2), 5, 1.4);
+      var x0 = b * BIN;
+      var wg = ctx.createLinearGradient(0, gy - 8, 0, gy);
+      wg.addColorStop(0, 'rgba(120,175,240,.85)'); wg.addColorStop(1, 'rgba(60,110,190,.9)');
+      ctx.fillStyle = wg; ctx.fillRect(x0, gy - 8, BIN + 0.5, 8);
+    }
+    ctx.lineWidth = 1.5; ctx.lineCap = 'round';
+    for (var b3 = 0; b3 < G.nb; b3++){
+      if (G.bins && G.bins[b3] >= 2) continue;
+      var xs = b3 * BIN;
+      ctx.beginPath();
+      for (var xx = xs; xx <= xs + BIN; xx += 3){
+        var yy = gy - 6 + Math.sin(xx * 0.09 - t * 4.2) * 0.9 + Math.sin(xx * 0.031 - t * 2.3) * 0.7;
+        if (xx === xs) ctx.moveTo(xx, yy); else ctx.lineTo(xx, yy);
+      }
+      ctx.strokeStyle = 'rgba(225,240,255,' + (0.3 + 0.5 * (0.5 + 0.5 * Math.sin(xs * 0.05 - t * 1.6))).toFixed(2) + ')';
+      ctx.stroke();
+    }
+    for (var gI = 0; gI < glints.length; gI++){
+      var gl = glints[gI], gb = (gl.x / BIN) | 0;
+      if (G.bins && G.bins[gb] >= 2) continue;
+      ctx.strokeStyle = 'rgba(240,248,255,' + gl.a.toFixed(2) + ')'; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.moveTo(gl.x, gy - 4 + gl.o); ctx.lineTo(gl.x + gl.l, gy - 4 + gl.o + 0.3); ctx.stroke();
     }
     for (var i = 0; i < leaves.length; i++) if (leaves[i].st === 0) drawLeaf(leaves[i]);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.drawImage(fg, 0, 0);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // water sheeting over the lip where the trough is packed
+    ctx.lineCap = 'round';
+    for (var sb = 0; sb < G.nb; sb++){
+      var sa = sheets[sb]; if (sa < 0.02) continue;
+      var sx = sb * CFG.BIN; if (sx + CFG.BIN > G.px - 2) continue;
+      for (var st = 0; st < 4; st++){
+        var bx = sx + 2 + st * (CFG.BIN - 4) / 3;
+        ctx.strokeStyle = 'rgba(160,200,255,' + (0.35 * sa).toFixed(3) + ')'; ctx.lineWidth = 1 + (st % 2);
+        ctx.beginPath(); ctx.moveTo(bx, gy - 1);
+        for (var sy = gy + 8; sy <= H; sy += 14) ctx.lineTo(bx + Math.sin(sy * 0.08 + t * 7 + st * 1.7 + sb) * 1.4, sy);
+        ctx.stroke();
+      }
+    }
     // overflow dripping off the front lip of clogged stretches
     ctx.strokeStyle = 'rgba(150,196,255,.75)'; ctx.lineCap = 'round'; ctx.lineWidth = phone ? 1.8 : 2.2;
     ctx.beginPath();
@@ -657,9 +700,9 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
         ctx.quadraticCurveTo(ox - 14 * flow - 6 + wob, oy + 6, ox - 18 * flow - 8 + wob, H + 4);
         ctx.stroke();
       }
-      ctx.fillStyle = 'rgba(180,215,255,.8)';
-      for (var s = 0; s < splash.length; s++){ var q = splash[s]; ctx.fillRect(q.x, q.y, 2, 2); }
     }
+    ctx.fillStyle = 'rgba(180,215,255,.8)';
+    for (var s = 0; s < splash.length; s++){ var q = splash[s]; ctx.fillRect(q.x, q.y, 2, 2); }
     // leaves in the air and drifting back down
     for (var m = 0; m < leaves.length; m++) if (leaves[m].st !== 0) drawLeaf(leaves[m]);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -706,7 +749,7 @@ var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)'
     var svg = document.createElementNS(NS, 'svg');
     svg.setAttribute('viewBox', '0 0 1440 100'); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('aria-hidden', 'true');
     var fill = document.createElementNS(NS, 'path'); fill.setAttribute('fill', to);
-    var lines = [['#2563d9', 5, 1], ['#7fb0ff', 3, .9], ['#cfe2ff', 2, .7]].map(function(s){
+    var lines = [['#2563d9', 5, 1], ['#7fb0ff', 3, .9], ['#4f8ff0', 4, .55]].map(function(s){
       var p = document.createElementNS(NS, 'path'); p.setAttribute('fill', 'none'); p.setAttribute('stroke', s[0]);
       p.setAttribute('stroke-width', s[1]); p.setAttribute('stroke-opacity', s[2]); p.setAttribute('vector-effect', 'non-scaling-stroke');
       p.setAttribute('stroke-linecap', 'round'); return p;
