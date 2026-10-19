@@ -8,6 +8,12 @@
         "value": "<ul> \"rows\": children flush against border-top on top (no inset)",
         "createdAt": "2026-10-19T01:43:14.473Z",
         "reason": "agent: hairline divider list per Ellie's row rule (rows never boxed); rows carry 8px vertical padding"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "sizes: 16px, 18px, 20px, 22px (ratio 1.4:1)",
+        "createdAt": "2026-10-19T01:44:45.324Z",
+        "reason": "agent: these are the body/label tiers only; hierarchy comes from the 36-90px heavy italic display headings the detector's list omits"
       }
     ]
   }
