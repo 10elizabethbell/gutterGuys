@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gutter Guys | Gutter, Eavestrough &amp; Roof Cleaning</title>
+<meta name="description" content="Gutter and eavestrough cleaning, downspout flushing, roof cleaning and moss removal. Free quotes from Gutter Guys: 519-991-2813.">
+<meta name="theme-color" content="#0c1a33">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gutter Guys | Clean gutters. Protect your home.">
+<meta property="og:description" content="Gutter and eavestrough cleaning, downspout flushing, roof cleaning and moss removal. Text or call for a free quote.">
+<meta property="og:url" content="https://10elizabethbell.github.io/gutterGuys/">
+<meta property="og:image" content="https://10elizabethbell.github.io/gutterGuys/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>
+/* ---------- tokens ---------- */
+:root{
+  --navy:#0c1a33; --navy-2:#10244a; --navy-3:#163063;
+  --mist:#e8eff8; --white:#fff;
+  --blue:#2563d9; --blue-press:#1c4fb5; --blue-hi:#7fb0ff;
+  --ink:#eef3fb; --ink-dim:#b4c4de;
+  --ink-dark:#0f2140; --ink-dark-dim:#3b5378; --rule:#c3d1e4;
+  --leaf:#e7a23b; --focus:#b96f14;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --gutter:16px; --max:1180px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth;background:var(--navy)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:var(--font);font-size:17px;line-height:1.55;color:var(--ink);background:var(--navy);caret-color:var(--leaf)}
+::selection{background:var(--leaf);color:var(--navy)}
+html{scrollbar-color:var(--navy-3) var(--navy)}
+img{max-width:100%;display:block}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--leaf);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.display{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;margin:0;text-wrap:balance}
+h2.display{font-size:clamp(2rem,8.6vw,3.6rem)}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 26px;border-radius:14px;font:800 18px/1.1 var(--font);white-space:nowrap;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .18s,border-color .18s,color .18s,transform .12s}
+.btn:active{transform:translateY(1px)}
+.btn svg{flex:none}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue);box-shadow:0 6px 16px -8px rgba(3,10,24,.6)}
+.btn-primary:hover{background:var(--blue-press);border-color:var(--blue-press)}
+.btn-ghost{color:var(--ink);border-color:#8fb6f5;background:transparent}
+.btn-ghost:hover{border-color:#fff;background:rgba(127,176,255,.12)}
+
+/* ---------- header ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:12px;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px}
+.brand img{width:46px;height:46px;border-radius:50%;background:#fff;box-shadow:0 4px 14px -4px rgba(0,0,0,.5)}
+.brand span{font-weight:900;font-style:italic;text-transform:uppercase;font-size:18px;letter-spacing:-.01em;line-height:1}
+.tel{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 4px;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel svg{color:var(--blue-hi);transition:color .18s}
+.tel:hover svg{color:var(--leaf)}
+@media (max-width:399px){.tel svg{display:none}.brand span{font-size:16px}.brand img{width:42px;height:42px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;display:flex;flex-direction:column;min-height:min(100svh,920px);background:
+  radial-gradient(120% 70% at 80% 0%,#1b3a73 0%,rgba(27,58,115,0) 60%),
+  linear-gradient(180deg,#0f2246 0%,var(--navy) 70%)}
+.hero-copy{padding-top:clamp(18px,4svh,56px);padding-bottom:18px;position:relative;z-index:1}
+.hero h1{font-size:clamp(2.15rem,9.4vw,5.6rem)}
+.hero h1 span{display:block}
+.hero h1 .b{color:var(--blue-hi)}
+.promise{margin:16px 0 22px;font-size:clamp(17px,4.6vw,20px);line-height:1.45;color:var(--ink-dim);max-width:34ch}
+.actions{display:grid;gap:12px;max-width:420px}
+.scene{position:relative;margin-top:auto;height:clamp(210px,33svh,270px)}
+.scene canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.scene .still{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(12,26,51,0) 0%,#25324a 18%,#2c3a52 40%,#d9e0ea 41%,#b6c1cf 58%,#152847 59%,#132544 100%)}
+@media (min-width:760px){
+  .actions{grid-template-columns:auto auto;justify-content:start}
+  .scene{height:clamp(300px,44svh,430px)}
+}
+@media (min-width:1024px){
+  .brand img{width:56px;height:56px}
+  .brand span{font-size:22px}
+  .tel{font-size:19px}
+  .hero-copy{padding-top:40px}
+  .promise{max-width:40ch}
+}
+
+/* ---------- water seams ---------- */
+.seam{position:relative;height:64px;margin-top:-1px;margin-bottom:-1px;overflow:hidden}
+.seam svg{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
+@media (min-width:760px){.seam{height:100px}}
+
+/* ---------- light sections ---------- */
+.light{background:var(--mist);color:var(--ink-dark)}
+.light ::selection{background:var(--leaf);color:var(--ink-dark)}
+section{padding:44px 0 56px}
+@media (min-width:1024px){section{padding:72px 0 88px}}
+
+/* services */
+.services .grid{display:grid;gap:22px}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.rows li{border-bottom:1px solid var(--rule)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 2px;text-decoration:none;color:var(--ink-dark);font-weight:800;font-size:19px;line-height:1.2}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.arrow{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:2px solid var(--rule);color:var(--ink-dark);transition:background-color .18s,border-color .18s,color .18s}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--blue);border-color:var(--blue);color:#fff}
+.row:focus-visible .arrow{outline:3px solid var(--blue);outline-offset:3px}
+@media (min-width:1024px){
+  .services .grid{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:56px;align-items:start}
+  .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:40px;border-top:0}
+  .rows li:nth-child(-n+2){border-top:1px solid var(--rule)}
+}
+
+/* why + steps (dark) */
+.dark{background:var(--navy-2)}
+.why .lede{font-size:clamp(17px,4.6vw,20px);color:var(--ink-dim);margin:16px 0 26px;max-width:40ch}
+.benefits{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.benefits li{display:flex;align-items:center;gap:14px;font-weight:800;font-size:19px;line-height:1.25}
+.benefits svg{flex:none;color:var(--blue-hi)}
+.steps-h{font-size:clamp(1.6rem,6.4vw,2.4rem);margin-top:52px}
+.steps{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:20px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;font-size:18px;line-height:1.4}
+.steps li::before{counter-increment:s;content:counter(s);font-weight:900;font-style:italic;font-size:40px;line-height:.9;color:var(--blue-hi)}
+.steps b{display:block;font-size:19px}
+.steps span{color:var(--ink-dim)}
+.more{margin-top:56px;padding-top:40px;border-top:1px solid rgba(127,176,255,.22)}
+.more h2{font-size:clamp(1.6rem,6.4vw,2.4rem)}
+.fb{margin-top:20px;max-width:520px;font-size:18px}
+@media (min-width:1024px){
+  .why .wrap{display:grid;grid-template-columns:1fr 1fr;column-gap:72px}
+  .why .intro{grid-column:1}
+  .why .how{grid-column:2;grid-row:1 / span 2}
+  .steps-h{margin-top:0}
+  .more{grid-column:1;margin-top:44px}
+}
+
+/* quote form */
+.quote .grid{display:grid;gap:26px}
+.quote .sub{margin:14px 0 0;font-size:clamp(17px,4.6vw,20px);color:var(--ink-dark-dim)}
+.quote .trust{margin:18px 0 0;font-weight:700;color:var(--ink-dark-dim);font-size:16px}
+form{display:grid;gap:22px}
+.field{display:grid;gap:8px}
+.field > label,.legend{font-weight:800;font-size:17px}
+.opt{font-weight:500;color:var(--ink-dark-dim)}
+input[type=text],textarea{width:100%;font:500 17px/1.4 var(--font);color:var(--ink-dark);background:#fff;border:2px solid var(--rule);border-radius:12px;padding:14px 14px;min-height:54px;transition:border-color .15s,outline-color .15s;outline:3px solid transparent;outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+input[type=text]:hover,textarea:hover,input[type=text]:focus,textarea:focus{outline:3px solid var(--focus);border-color:var(--focus)}
+::placeholder{color:#6a7f9f}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chip{position:relative}
+.chip input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chip span{display:flex;align-items:center;gap:8px;min-height:46px;padding:0 16px;border-radius:12px;background:#fff;border:2px solid var(--rule);font-weight:700;font-size:16px;cursor:pointer;transition:background-color .15s,color .15s,border-color .15s;outline:3px solid transparent;outline-offset:1px}
+.chip span svg{display:none}
+.chip:hover span,.chip input:focus-visible + span{outline:3px solid var(--focus);border-color:var(--focus)}
+.chip input:checked + span{background:var(--navy-2);border-color:var(--navy-2);color:#fff}
+.chip input:checked + span svg{display:block;color:var(--leaf)}
+.err{display:none;margin:0;color:#a3261b;font-weight:700;font-size:16px}
+.invalid .err{display:block}
+.invalid input[type=text]{border-color:#a3261b}
+.submit{width:100%}
+.submit:hover,.submit:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.after{margin:0;font-size:16px;color:var(--ink-dark-dim)}
+.after a{display:inline-block;padding:11px 0;margin:-11px 0;font-weight:800;color:var(--ink-dark);white-space:nowrap}
+.sent{display:none;margin:0;padding:14px 16px;border-radius:12px;background:#fff;border:2px solid var(--rule);font-size:16px}
+.sent.show{display:block}
+@media (min-width:1024px){
+  .quote .grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}
+}
+
+/* footer */
+footer{background:var(--navy);padding:40px 0 calc(40px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:22px}
+.f-brand{display:flex;align-items:center;gap:14px}
+.f-brand img{width:72px;height:72px;border-radius:50%;background:#fff}
+.f-brand b{display:block;font-weight:900;font-style:italic;text-transform:uppercase;font-size:22px;line-height:1}
+.f-brand span{color:var(--ink-dim)}
+.f-links{display:grid;gap:4px;font-weight:700}
+.f-links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
+.f-links a:hover{color:var(--blue-hi)}
+.f-note{color:var(--ink-dim);margin:0}
+@media (min-width:760px){footer .wrap{grid-template-columns:auto auto;justify-content:space-between;align-items:center}.f-note{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+<!--
+THESIS: The page is a home's drainage path. The visitor clears a leaf-packed eavestrough with a finger, the overflow stops and the downspout runs; water carries down the page to the quote. Refuses the category default: stock-photo hero, blue checkmark list, "Call Now" banner.
+OWN-WORLD: Rainy-evening navy (never black), Gutter Guys' royal blue, aluminium-white trough and downspout, slate shingles, wet autumn leaves in amber/rust/brown as the only warm color. Heavy italic uppercase lettering echoing the logo. Animated water seams between sections; rows with a single arrow cue.
+STORY: Their gutters overflow → this crew clears them and leaves the yard clean → text a photo or fill a short quote request that opens a text.
+FIRST VIEWPORT (390px): header logo + name left, 519-991-2813 top-right; "Clean gutters. / Protect your home." huge; one-line promise; Get a free quote (filled) + Text us a photo (outlined); the gutter scene fills the bottom third, playing itself until touched.
+FORM: Assigned direction 5 of 7 (downspout / drainage path), seed key 9bf96231; code-led.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<header class="hero" id="top">
+  <div class="wrap top">
+    <a class="brand" href="#top" aria-label="Gutter Guys, back to top">
+      <img src="assets/logo.webp" width="46" height="46" alt="">
+      <span>Gutter Guys</span>
+    </a>
+    <a class="tel" href="tel:+15199912813" aria-label="Call Gutter Guys at 519-991-2813">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 3.5 9 3.1l1.7 4.4-2.1 1.6a12 12 0 0 0 6.3 6.3l1.6-2.1 4.4 1.7-.4 2.4a2.4 2.4 0 0 1-2.5 2A16.5 16.5 0 0 1 4.6 6a2.4 2.4 0 0 1 2-2.5Z" fill="currentColor"/></svg>
+      519-991-2813
+    </a>
+  </div>
+  <div class="wrap hero-copy">
+    <h1 class="display"><span>Clean gutters.</span> <span class="b">Protect your home.</span></h1>
+    <p class="promise">We work on your roof like it's our own, and we don't pack up until the last leaf is off your lawn.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#quote">Get a free quote</a>
+      <a class="btn btn-ghost" id="photoText" href="sms:+15199912813">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12.5" r="3.4" stroke="currentColor" stroke-width="2"/><path d="M8.5 6 10 3.8h4L15.5 6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Text us a photo
+      </a>
+    </div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="still"></div>
+    <canvas id="gutter"></canvas>
+  </div>
+</header>
+
+<div class="seam" data-from="#0c1a33" data-to="#e8eff8"></div>
+
+<main>
+<section class="light services" id="services" aria-labelledby="svc-h">
+  <div class="wrap grid">
+    <h2 class="display" id="svc-h">What we clean</h2>
+    <ul class="rows">
+      <li><a class="row" href="#quote" data-service="Gutter &amp; eavestrough cleaning">Gutters &amp; eavestroughs<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Downspout flushing">Downspout flushing<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Roof cleaning">Roof cleaning<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Moss removal">Moss removal<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Soffit &amp; fascia cleaning">Soffit &amp; fascia<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Full exterior cleaning">Full exterior cleaning<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Minor gutter repairs">Minor gutter repairs<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li><a class="row" href="#quote" data-service="Ground cleanup">Ground cleanup<span class="arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="seam" data-from="#e8eff8" data-to="#10244a"></div>
+
+<section class="dark why" aria-labelledby="why-h">
+  <div class="wrap">
+    <div class="intro">
+      <h2 class="display" id="why-h">Don't wait for the damage</h2>
+      <p class="lede">A clogged gutter spills over every time it rains. We keep the water flowing where it should.</p>
+      <ul class="benefits">
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Protects your home</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Prevents mold &amp; mildew</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Improves drainage</li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c3.6 4.6 6.2 8.2 6.2 11.5a6.2 6.2 0 0 1-12.4 0C5.8 10.7 8.4 7.1 12 2.5Z" fill="currentColor"/></svg>Extends the life of your roof</li>
+      </ul>
+    </div>
+    <div class="how">
+      <h2 class="display steps-h">How it works</h2>
+      <ol class="steps">
+        <li><div><b>Send us a photo or give us a call.</b><span>We'll get back to you with a free quote.</span></div></li>
+        <li><div><b>We clear your gutters and flush the downspouts.</b><span>Roof, moss, soffits and fascia too, if you need them.</span></div></li>
+        <li><div><b>We clean up the ground before we go.</b><span>No leaves, no muck, no mess left behind.</span></div></li>
+      </ol>
+    </div>
+    <div class="more">
+      <h2 class="display">See our latest jobs</h2>
+      <a class="btn btn-primary fb" href="https://www.facebook.com/profile.php?id=61593655851024">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H7.9v3h2.6V21h3Z" fill="currentColor"/></svg>
+        Click to see more of our work
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="seam" data-from="#10244a" data-to="#e8eff8"></div>
+
+<section class="light quote" id="quote" aria-labelledby="quote-h">
+  <div class="wrap grid">
+    <div>
+      <h2 class="display" id="quote-h">Get your free quote</h2>
+      <p class="sub">Reliable service. Quality work. Clean results.</p>
+      <p class="trust">Residential · Commercial · Fully insured</p>
+    </div>
+    <form id="qform" novalidate>
+      <div class="field" id="f-name">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+        <p class="err">Please add your name so we know who's texting.</p>
+      </div>
+      <div class="field" id="f-addr">
+        <label for="addr">Street and town</label>
+        <input type="text" id="addr" name="addr" autocomplete="street-address" placeholder="Street address, town" required>
+        <p class="err">Please add your street and town so we can quote the right house.</p>
+      </div>
+      <fieldset class="field" id="f-svc">
+        <legend class="legend">What do you need?</legend>
+        <div class="chips" id="svcChips"></div>
+        <p class="err">Pick at least one service.</p>
+      </fieldset>
+      <fieldset class="field">
+        <legend class="legend">Building <span class="opt">(optional)</span></legend>
+        <div class="chips" id="heightChips"></div>
+      </fieldset>
+      <div class="field">
+        <label for="notes">Anything else? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Overflowing in one corner, a sagging section, when you're home…"></textarea>
+      </div>
+      <button class="btn btn-primary submit" type="submit">Text my quote request</button>
+      <p class="after">This opens a text to Gutter Guys with your answers filled in. Rather talk? Call <a href="tel:+15199912813">519-991-2813</a> or <a href="tel:+15197781752">519-778-1752</a>.</p>
+      <p class="sent" id="sent" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<div class="seam" data-from="#e8eff8" data-to="#0c1a33"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">
+      <img src="assets/logo.webp" width="72" height="72" alt="Gutter Guys logo" loading="lazy">
+      <div><b>Gutter Guys</b><span>Gutter, eavestrough &amp; roof cleaning</span></div>
+    </div>
+    <div class="f-links">
+      <a href="tel:+15199912813">519-991-2813</a>
+      <a href="tel:+15197781752">519-778-1752</a>
+      <a href="https://www.facebook.com/profile.php?id=61593655851024">Gutter Guys on Facebook</a>
+    </div>
+    <p class="f-note">Residential · Commercial · Fully insured · © 2026 Gutter Guys</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- shared animation loop ---------- */
+var Loop = (function(){
+  var jobs = new Set(), running = false, last = 0;
+  function tick(now){
+    var dt = Math.min(0.05, (now - last) / 1000 || 0.016); last = now;
+    jobs.forEach(function(j){ if (j.active) j.step(dt, now / 1000); });
+    var any = false; jobs.forEach(function(j){ if (j.active) any = true; });
+    if (any) requestAnimationFrame(tick); else running = false;
+  }
+  return {
+    add: function(j){ jobs.add(j); },
+    wake: function(){ if (!running){ running = true; last = performance.now(); requestAnimationFrame(tick); } }
+  };
+})();
+var REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- hero: the clogged eavestrough ---------- */
+(function(){
+  var CFG = {
+    LEAF_DENSITY: 0.34,  // leaves per px of gutter length (phone)
+    LEAF_DENSITY_WIDE: 0.26,
+    REGROW: 1.5,         // leaves per second falling back in (phone); scales with width
+    PUSH_R: 46,          // pointer reach, px
+    BREAK: 20,           // px a leaf must be pulled from its spot to fly out
+    SPRING: 38, DAMP: 6.5,
+    GRAVITY: 430,
+    RAIN: 0.16,          // rain streaks per px of width
+    GHOST_EVERY: 5.5,    // s between self-play sweeps until touched
+    BIN: 18              // px per drainage bin
+  };
+  var cv = document.getElementById('gutter'); if (!cv) return;
+  var ctx = cv.getContext('2d');
+  var W = 0, H = 0, dpr = 1, phone = true, G = {}, bg, fg, sprites = [];
+  var leaves = [], rain = [], drips = [], splash = [];
+  var t = 0, regrowAcc = 0, touched = false, ghost = null, ghostT = 2.2;
+  var ptr = { on:false, cx:0, cy:0, x:-999, y:-999, px:-999, py:-999, vx:0, vy:0 };
+  var rnd = Math.random;
+  var LEAF_COLORS = ['#d98a2b','#c2602a','#e2b23f','#8a5a2e','#a8432a','#7d7f3a','#b8762f','#9c4b25'];
+
+  function makeSprites(){
+    sprites = [];
+    var S = 40;
+    LEAF_COLORS.forEach(function(col, ci){
+      for (var shape = 0; shape < 2; shape++){
+        var c = document.createElement('canvas'); c.width = c.height = S * 2;
+        var g = c.getContext('2d'); g.scale(2, 2); g.translate(S/2, S/2);
+        var L = S * 0.86, w = L * (shape ? 0.5 : 0.36), a = (ci % 3 - 1) * 0.06;
+        g.beginPath();
+        g.moveTo(-L/2, 0);
+        g.bezierCurveTo(-L*0.28, -w*(0.95+a), L*0.18, -w*0.85, L/2, 0);
+        g.bezierCurveTo(L*0.2, w*(0.8-a), -L*0.3, w*0.95, -L/2, 0);
+        var gr = g.createLinearGradient(0, -w, 0, w);
+        gr.addColorStop(0, shade(col, 18)); gr.addColorStop(.55, col); gr.addColorStop(1, shade(col, -28));
+        g.fillStyle = gr; g.fill();
+        g.strokeStyle = shade(col, -40); g.lineWidth = 0.8; g.stroke();
+        g.strokeStyle = shade(col, -34); g.lineWidth = 1;
+        g.beginPath(); g.moveTo(-L/2 - 4, 0.5); g.quadraticCurveTo(0, -1.5, L/2 - 2, 0); g.stroke();
+        g.lineWidth = 0.6;
+        for (var v = -2; v <= 2; v++){ if (!v) continue;
+          var vx = v * L * 0.13; g.beginPath(); g.moveTo(vx, -0.6);
+          g.lineTo(vx + L*0.09, (v > 0 ? -1 : 1) * w * 0.55); g.stroke();
+          g.beginPath(); g.moveTo(vx, 0.4); g.lineTo(vx + L*0.09, (v > 0 ? 1 : -1) * w * 0.55); g.stroke(); }
+        sprites.push(c);
+      }
+    });
+  }
+  function shade(hex, p){
+    var n = parseInt(hex.slice(1), 16), r = n >> 16, g = n >> 8 & 255, b = n & 255;
+    var f = function(v){ return Math.max(0, Math.min(255, Math.round(v + p * 2.55))); };
+    return 'rgb(' + f(r) + ',' + f(g) + ',' + f(b) + ')';
+  }
+
+  function layout(){
+    var r = cv.getBoundingClientRect();
+    var nw = Math.round(r.width), nh = Math.round(r.height);
+    if (nw === W && nh === H) return false;
+    W = nw; H = nh; phone = W < 700;
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    var gh = phone ? 34 : 48;
+    G.gh = gh;
+    G.gy = Math.round(H * (phone ? 0.46 : 0.48));
+    G.roofTop = G.gy - (phone ? 84 : 150);
+    G.pw = phone ? 20 : 26;
+    G.px = W - (phone ? 52 : Math.max(120, W * 0.09));
+    G.gx0 = -12; G.gx1 = G.px + G.pw + 8;
+    G.outY = H - (phone ? 30 : 40);
+    G.leafS = phone ? 19 : 25;
+    G.nb = Math.ceil((G.gx1) / CFG.BIN);
+    buildStatic();
+    seed();
+    return true;
+  }
+
+  function buildStatic(){
+    bg = document.createElement('canvas'); bg.width = cv.width; bg.height = cv.height;
+    var g = bg.getContext('2d'); g.scale(dpr, dpr);
+    var gy = G.gy, gh = G.gh;
+    // roof: 3-tab shingle courses, foreshortened and darker toward the ridge
+    var top = G.roofTop, bot = gy - 6, span = bot - top;
+    var rows = phone ? 6 : 7, weights = [], sum = 0;
+    for (var i = 0; i < rows; i++){ var wgt = Math.pow(0.86, rows - 1 - i); weights.push(wgt); sum += wgt; }
+    var y0 = top;
+    for (var i = 0; i < rows; i++){
+      var rowH = span * weights[i] / sum, depth = i / (rows - 1);
+      var tw = (phone ? 34 : 46) * (0.62 + depth * 0.38);
+      var off = ((i * 0.37) % 1) * tw;
+      for (var x = -tw + off; x < W + tw; x += tw){
+        var l = 17 + depth * 9 + (Math.sin(x * 12.9898 + i * 78.233) * 43758.5453 % 1 + 1) % 1 * 7;
+        var gr = g.createLinearGradient(0, y0, 0, y0 + rowH);
+        gr.addColorStop(0, 'hsl(214,14%,' + (l - 4) + '%)'); gr.addColorStop(1, 'hsl(214,14%,' + l + '%)');
+        g.fillStyle = gr; g.fillRect(x, y0, tw, rowH + 2);
+        g.fillStyle = 'rgba(4,10,22,.55)';
+        g.fillRect(x, y0 + rowH * 0.25, 1.4, rowH * 0.75 + 1);
+        for (var k = 0; k < (phone ? 10 : 16); k++){
+          g.fillStyle = rnd() < 0.5 ? 'rgba(255,255,255,' + (0.04 + rnd() * 0.06) + ')' : 'rgba(0,0,0,' + (0.08 + rnd() * 0.1) + ')';
+          g.fillRect(x + rnd() * tw, y0 + rnd() * rowH, 1.3, 1.3);
+        }
+      }
+      var cs = g.createLinearGradient(0, y0 + rowH - 4, 0, y0 + rowH + 2);
+      cs.addColorStop(0, 'rgba(0,0,0,0)'); cs.addColorStop(1, 'rgba(2,8,20,.65)');
+      g.fillStyle = cs; g.fillRect(0, y0 + rowH - 4, W, 6);
+      y0 += rowH;
+    }
+    // fade the roof into the evening sky
+    g.globalCompositeOperation = 'destination-in';
+    var fade = g.createLinearGradient(0, top, 0, top + span * 0.45);
+    fade.addColorStop(0, 'rgba(0,0,0,0)'); fade.addColorStop(1, 'rgba(0,0,0,1)');
+    g.fillStyle = fade; g.fillRect(0, top, W, H);
+    g.globalCompositeOperation = 'source-over';
+    // drip edge + fascia
+    g.fillStyle = '#c8d1dd'; g.fillRect(0, bot - 2, W, 4);
+    g.fillStyle = '#9ea9b8'; g.fillRect(0, bot + 2, W, gy + gh - bot);
+    // siding wall below
+    var wy = gy + gh + 6, bh = phone ? 17 : 21;
+    g.fillStyle = '#1d3256'; g.fillRect(0, gy + gh - 2, W, H - gy - gh + 2);
+    g.fillStyle = '#0f1f3b'; g.fillRect(0, gy + gh - 2, W, 8);
+    for (var y = wy; y < H; y += bh){
+      var gr = g.createLinearGradient(0, y, 0, y + bh);
+      gr.addColorStop(0, '#2a4570'); gr.addColorStop(1, '#1b3053');
+      g.fillStyle = gr; g.fillRect(0, y, W, bh - 2);
+      g.fillStyle = 'rgba(5,14,32,.55)'; g.fillRect(0, y + bh - 2, W, 2);
+    }
+    var sh = g.createLinearGradient(0, gy + gh, 0, gy + gh + 40);
+    sh.addColorStop(0, 'rgba(5,12,28,.6)'); sh.addColorStop(1, 'rgba(5,12,28,0)');
+    g.fillStyle = sh; g.fillRect(0, gy + gh, W, 40);
+    // gutter interior (back wall seen over the front lip)
+    g.fillStyle = '#7d8897'; g.fillRect(G.gx0, gy - 12, G.gx1 - G.gx0, 12);
+    g.fillStyle = '#5c6676'; g.fillRect(G.gx0, gy - 5, G.gx1 - G.gx0, 5);
+
+    fg = document.createElement('canvas'); fg.width = cv.width; fg.height = cv.height;
+    var f = fg.getContext('2d'); f.scale(dpr, dpr);
+    // K-style front face
+    var face = f.createLinearGradient(0, gy, 0, gy + gh);
+    face.addColorStop(0, '#ffffff'); face.addColorStop(.18, '#eef2f6'); face.addColorStop(.42, '#cdd5df');
+    face.addColorStop(.55, '#f4f6f9'); face.addColorStop(.85, '#c3ccd8'); face.addColorStop(1, '#9aa6b6');
+    f.fillStyle = face; f.fillRect(G.gx0, gy, G.gx1 - G.gx0, gh);
+    f.fillStyle = 'rgba(40,55,80,.28)'; f.fillRect(G.gx0, gy + gh - 2, G.gx1 - G.gx0, 2);
+    // end cap
+    f.fillStyle = '#b9c3d0'; f.fillRect(G.gx1 - 6, gy - 3, 6, gh + 3);
+    // hangers
+    f.fillStyle = 'rgba(70,85,110,.35)';
+    for (var hx = 40; hx < G.gx1 - 20; hx += phone ? 80 : 120) f.fillRect(hx, gy, 3, 5);
+    // downspout
+    var px = G.px, pw = G.pw, oy = G.outY;
+    var pg = f.createLinearGradient(px, 0, px + pw, 0);
+    pg.addColorStop(0, '#9aa6b6'); pg.addColorStop(.35, '#f5f7fa'); pg.addColorStop(.7, '#d5dce5'); pg.addColorStop(1, '#8996a8');
+    f.fillStyle = pg; f.fillRect(px, gy + gh - 4, pw, oy - gy - gh + 4);
+    f.fillStyle = 'rgba(40,55,80,.25)';
+    for (var sy = gy + gh + 30; sy < oy - 20; sy += phone ? 46 : 64) f.fillRect(px - 2, sy, pw + 4, 3);
+    // elbow kicking out to the left
+    var eg = f.createLinearGradient(0, oy - pw * 0.2, 0, oy + pw * 0.8);
+    eg.addColorStop(0, '#f5f7fa'); eg.addColorStop(.6, '#cdd5df'); eg.addColorStop(1, '#8996a8');
+    f.fillStyle = eg;
+    f.beginPath(); f.moveTo(px + pw, oy - 2); f.quadraticCurveTo(px + pw, oy + pw * 0.75, px - 4, oy + pw * 0.75);
+    f.lineTo(px - pw * 0.9, oy + pw * 0.78); f.lineTo(px - pw * 0.9, oy + 2); f.lineTo(px, oy); f.closePath(); f.fill();
+    f.fillStyle = '#4b5a70'; f.fillRect(px - pw * 0.9 - 2, oy + 1, 3, pw * 0.78);
+  }
+
+  function newLeaf(x, y, state){
+    return { hx:x, hy:y, x:x, y:y, vx:0, vy:0, r:rnd() * 6.28, vr:0, s:G.leafS * (0.72 + rnd() * 0.5),
+             spr:(rnd() * sprites.length) | 0, st:state, ph:rnd() * 6.28, fx:0 };
+  }
+  function homeY(){ return G.gy + 3 - Math.pow(rnd(), 0.8) * (phone ? 20 : 26); }
+  function capacity(){ return Math.floor(G.gx1 * (phone ? CFG.LEAF_DENSITY : CFG.LEAF_DENSITY_WIDE)); }
+  function seed(){
+    leaves = [];
+    var n = capacity();
+    for (var i = 0; i < n; i++){ var l = newLeaf(rnd() * (G.gx1 - 14), homeY(), 0); leaves.push(l); }
+    leaves.sort(function(a, b){ return a.hy - b.hy; });
+    rain = [];
+    var rn = Math.round(W * CFG.RAIN * (phone ? 0.8 : 1));
+    for (var j = 0; j < rn; j++) rain.push({ x:rnd() * W, y:rnd() * H, v:520 + rnd() * 260, l:8 + rnd() * 12, a:0.12 + rnd() * 0.18 });
+    drips = []; splash = [];
+  }
+
+  function push(px, py, pvx, pvy, dt){
+    var R = CFG.PUSH_R * (phone ? 1 : 1.2), R2 = R * R;
+    for (var i = 0; i < leaves.length; i++){
+      var l = leaves[i], dx = l.x - px, dy = l.y - py, d2 = dx*dx + dy*dy;
+      if (d2 > R2) continue;
+      var d = Math.sqrt(d2) || 1, f = 1 - d / R;
+      l.vx += (dx / d) * f * 1800 * dt + pvx * f * 0.32;
+      l.vy += (dy / d) * f * 1800 * dt + pvy * f * 0.32;
+      if (l.st === 0) l.vy -= f * 2600 * dt;          // scooped up and out of the trough
+      l.vr += (rnd() - 0.5) * f * 30 * dt * 10;
+    }
+  }
+
+  function step(dt){
+    t += dt;
+    // pointer, read against the live rect so page scroll under the finger is honored
+    var rect = cv.getBoundingClientRect();
+    if (ptr.on){
+      var nx = ptr.cx - rect.left, ny = ptr.cy - rect.top;
+      if (ptr.x < -900){ ptr.x = nx; ptr.y = ny; }
+      ptr.vx = (nx - ptr.x) / dt; ptr.vy = (ny - ptr.y) / dt;
+      ptr.x = nx; ptr.y = ny;
+      push(ptr.x, ptr.y, clampV(ptr.vx), clampV(ptr.vy), dt);
+    }
+    // self-play sweep until someone touches it
+    if (!touched){
+      ghostT -= dt;
+      if (!ghost && ghostT <= 0){ ghost = { x:-30 + rnd() * W * 0.25, sp:(phone ? 230 : 480) * (0.85 + rnd() * 0.3), end:G.px - rnd() * W * 0.25 }; }
+      if (ghost){
+        ghost.x += ghost.sp * dt;
+        var gyy = G.gy - 6 + Math.sin(t * 9) * 4;
+        push(ghost.x, gyy, ghost.sp * 0.7, -ghost.sp * 0.55, dt);
+        if (ghost.x > ghost.end){ ghost = null; ghostT = CFG.GHOST_EVERY; }
+      }
+    }
+    // leaves
+    var inG = 0, bins = new Array(G.nb).fill(0);
+    for (var i = leaves.length - 1; i >= 0; i--){
+      var l = leaves[i];
+      if (l.st === 0){
+        var dx = l.x - l.hx, dy = l.y - l.hy;
+        l.vx += (-CFG.SPRING * dx - CFG.DAMP * l.vx) * dt;
+        l.vy += (-CFG.SPRING * dy - CFG.DAMP * l.vy) * dt;
+        l.vr += (-8 * 0 - 4 * l.vr) * dt;
+        l.x += l.vx * dt; l.y += l.vy * dt; l.r += l.vr * dt;
+        if (dx*dx + dy*dy > CFG.BREAK * CFG.BREAK){ l.st = 1; l.vy -= 80; l.vr = (rnd() - 0.5) * 9; }
+        else { inG++; var b = (l.hx / CFG.BIN) | 0; if (b >= 0 && b < G.nb) bins[b]++; }
+      } else if (l.st === 1){
+        l.vy += CFG.GRAVITY * dt; l.vx *= (1 - 1.1 * dt); l.vy *= (1 - 1.4 * dt);
+        l.vx += Math.sin(t * 3.1 + l.ph) * 160 * dt;
+        l.x += l.vx * dt; l.y += l.vy * dt; l.r += l.vr * dt;
+        if (l.y > H + 30 || l.x < -50 || l.x > W + 50) leaves.splice(i, 1);
+      } else {
+        l.fx += dt;
+        l.x += Math.sin(l.fx * 2.2 + l.ph) * 38 * dt; l.y += l.vy * dt;
+        l.r += Math.sin(l.fx * 1.7 + l.ph) * 2.2 * dt;
+        if (l.y >= l.hy){ l.st = 0; l.hx = Math.max(0, Math.min(G.gx1 - 14, l.x)); l.x = l.hx; l.y = l.hy; l.vy = 0; }
+      }
+    }
+    // leaves drifting back in: a clean patch lasts a while, then fall brings more
+    regrowAcc += dt * CFG.REGROW * (W / 390);
+    while (regrowAcc >= 1){
+      regrowAcc -= 1;
+      if (inG + countFalling() < capacity()){
+        var nl = newLeaf(rnd() * (G.gx1 - 14), homeY(), 2);
+        nl.y = -20 - rnd() * 30; nl.vy = 48 + rnd() * 36; leaves.unshift(nl);
+      }
+    }
+    // drainage: blocked bins overflow over the lip, clear bins feed the downspout
+    var clear = 0; G.bins = bins;
+    for (var b2 = 0; b2 < G.nb; b2++){
+      if (bins[b2] < 2) clear++;
+      else if (rnd() < dt * (phone ? 1.4 : 1.1)) drips.push({ x:b2 * CFG.BIN + rnd() * CFG.BIN, y:G.gy + 1, vy:20 + rnd() * 40, l:5 + rnd() * 6 });
+    }
+    G.clear = clear / G.nb;
+    for (var k = drips.length - 1; k >= 0; k--){
+      var d = drips[k]; d.vy += 900 * dt; d.y += d.vy * dt;
+      if (d.y > H + 10) drips.splice(k, 1);
+    }
+    if (drips.length > 220) drips.splice(0, drips.length - 220);
+    for (var r = 0; r < rain.length; r++){
+      var p = rain[r]; p.y += p.v * dt; p.x -= p.v * 0.08 * dt;
+      if (p.y > H + 20){ p.y = -20 - rnd() * 40; p.x = rnd() * (W + 40); }
+    }
+    var flow = Math.sqrt(G.clear);
+    if (rnd() < flow * dt * 30) splash.push({ x:G.px - G.pw * 0.9 - 14 - rnd() * 18 * flow, y:H - 2, vx:-(20 + rnd() * 80), vy:-(60 + rnd() * 120), life:0.5 });
+    for (var s = splash.length - 1; s >= 0; s--){ var q = splash[s]; q.vy += 700 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.life -= dt; if (q.life <= 0) splash.splice(s, 1); }
+    draw(flow);
+    window.__gg = { inGutter:inG, clear:+G.clear.toFixed(3), leaves:leaves.length, drips:drips.length, W:W, H:H };
+  }
+  function countFalling(){ var n = 0; for (var i = 0; i < leaves.length; i++) if (leaves[i].st === 2) n++; return n; }
+  function clampV(v){ return Math.max(-1600, Math.min(1600, v)); }
+
+  function drawLeaf(l){
+    var c = sprites[l.spr], s = l.s;
+    ctx.setTransform(dpr * Math.cos(l.r), dpr * Math.sin(l.r), -dpr * Math.sin(l.r), dpr * Math.cos(l.r), l.x * dpr, l.y * dpr);
+    ctx.drawImage(c, -s / 2, -s / 2, s, s);
+  }
+  function draw(flow){
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.drawImage(bg, 0, 0);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // water running along the clear stretches of the trough toward the downspout
+    var gy = G.gy;
+    for (var b = 0; b < G.nb; b++){
+      if (G.bins && G.bins[b] >= 2) continue;
+      var x0 = b * CFG.BIN;
+      ctx.fillStyle = 'rgba(96,160,240,.75)'; ctx.fillRect(x0, gy - 7, CFG.BIN + 0.5, 6);
+      var ph = ((x0 - t * 70) % 26 + 26) % 26;
+      ctx.fillStyle = 'rgba(220,236,255,.8)'; ctx.fillRect(x0 + ph * 0.6, gy - 6 + (b % 2), 5, 1.4);
+    }
+    for (var i = 0; i < leaves.length; i++) if (leaves[i].st === 0) drawLeaf(leaves[i]);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(fg, 0, 0);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // overflow dripping off the front lip of clogged stretches
+    ctx.strokeStyle = 'rgba(150,196,255,.75)'; ctx.lineCap = 'round'; ctx.lineWidth = phone ? 1.8 : 2.2;
+    ctx.beginPath();
+    for (var k = 0; k < drips.length; k++){ var d = drips[k]; ctx.moveTo(d.x, d.y); ctx.lineTo(d.x, d.y + d.l + d.vy * 0.012); }
+    ctx.stroke();
+    // downspout outlet: a stream that grows as the gutter clears
+    if (flow > 0.02){
+      var ox = G.px - G.pw * 0.9, oy = G.outY + G.pw * 0.42;
+      for (var j = 0; j < 3; j++){
+        ctx.strokeStyle = 'rgba(' + (j ? '214,232,255,' : '110,168,245,') + (0.45 + flow * 0.5) + ')';
+        ctx.lineWidth = (3 + flow * (phone ? 10 : 14)) * (j ? 0.45 : 1);
+        ctx.beginPath(); ctx.moveTo(ox, oy + (j - 1) * 2);
+        var wob = Math.sin(t * 13 + j) * 2;
+        ctx.quadraticCurveTo(ox - 14 * flow - 6 + wob, oy + 6, ox - 18 * flow - 8 + wob, H + 4);
+        ctx.stroke();
+      }
+      ctx.fillStyle = 'rgba(180,215,255,.8)';
+      for (var s = 0; s < splash.length; s++){ var q = splash[s]; ctx.fillRect(q.x, q.y, 2, 2); }
+    }
+    // leaves in the air and drifting back down
+    for (var m = 0; m < leaves.length; m++) if (leaves[m].st !== 0) drawLeaf(leaves[m]);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // rain
+    ctx.strokeStyle = 'rgba(190,215,255,.22)'; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (var r = 0; r < rain.length; r++){ var p = rain[r]; ctx.moveTo(p.x, p.y); ctx.lineTo(p.x - p.l * 0.08, p.y + p.l); }
+    ctx.stroke();
+  }
+
+  // input: mouse hovers, fingers drag in any direction (the canvas owns its touches)
+  function down(e){ touched = true; ghost = null; ptr.on = true; ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.x = -999; Loop.wake(); }
+  cv.addEventListener('pointerdown', function(e){ down(e); try { cv.setPointerCapture(e.pointerId); } catch(_){} e.preventDefault(); });
+  cv.addEventListener('pointermove', function(e){
+    if (e.pointerType === 'mouse'){ if (!ptr.on){ ptr.on = true; ptr.x = -999; } touched = true; ghost = null; }
+    ptr.cx = e.clientX; ptr.cy = e.clientY;
+  });
+  function up(e){ if (e.pointerType !== 'mouse') ptr.on = false; }
+  cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+  cv.addEventListener('pointerleave', function(e){ if (e.pointerType === 'mouse') ptr.on = false; });
+  cv.addEventListener('touchstart', function(e){ var p = e.touches[0]; down(p); }, { passive:true });
+  cv.addEventListener('touchmove', function(e){ var p = e.touches[0]; ptr.on = true; ptr.cx = p.clientX; ptr.cy = p.clientY; }, { passive:true });
+  cv.addEventListener('touchend', function(){ ptr.on = false; }, { passive:true });
+
+  makeSprites();
+  var job = { active:true, step:step };
+  layout();
+  window.addEventListener('resize', function(){ if (layout() && REDUCED) step(0.016); });
+  if (REDUCED){ touched = true; step(0.016); return; }
+  Loop.add(job);
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ job.active = es[0].isIntersecting; if (job.active) Loop.wake(); }).observe(cv);
+  }
+  Loop.wake();
+})();
+
+/* ---------- water seams between sections ---------- */
+(function(){
+  var SPEED = 1.15, PTS = 20;
+  var NS = 'http://www.w3.org/2000/svg';
+  document.querySelectorAll('.seam').forEach(function(el, idx){
+    var from = el.dataset.from, to = el.dataset.to;
+    el.style.background = from;
+    var svg = document.createElementNS(NS, 'svg');
+    svg.setAttribute('viewBox', '0 0 1440 100'); svg.setAttribute('preserveAspectRatio', 'none'); svg.setAttribute('aria-hidden', 'true');
+    var fill = document.createElementNS(NS, 'path'); fill.setAttribute('fill', to);
+    var lines = [['#2563d9', 5, 1], ['#7fb0ff', 3, .9], ['#cfe2ff', 2, .7]].map(function(s){
+      var p = document.createElementNS(NS, 'path'); p.setAttribute('fill', 'none'); p.setAttribute('stroke', s[0]);
+      p.setAttribute('stroke-width', s[1]); p.setAttribute('stroke-opacity', s[2]); p.setAttribute('vector-effect', 'non-scaling-stroke');
+      p.setAttribute('stroke-linecap', 'round'); return p;
+    });
+    svg.appendChild(lines[0]); svg.appendChild(fill); svg.appendChild(lines[1]); svg.appendChild(lines[2]);
+    el.appendChild(svg);
+    var seed = idx * 1.7;
+    function y(x, tt, k){
+      var sw = Math.sin(x * 0.0021 + tt * 0.9 * SPEED + seed) * 13 * (0.75 + 0.25 * Math.sin(tt * 0.31 + seed));
+      var rp = Math.sin(x * 0.0072 - tt * 1.9 * SPEED + k * 1.3 + seed) * (6 - k);
+      var ch = Math.sin(x * 0.017 + tt * 3.1 * SPEED + k * 2.1) * 2.2;
+      return 50 + sw + rp + ch + (k - 1) * 9;
+    }
+    function d(tt, k){
+      var s = '';
+      for (var x = -20; x <= 1460; x += PTS) s += (s ? 'L' : 'M') + x + ' ' + y(x, tt, k).toFixed(1);
+      return s;
+    }
+    function render(tt){
+      var mid = d(tt, 1);
+      lines[0].setAttribute('d', d(tt, 0)); lines[1].setAttribute('d', mid); lines[2].setAttribute('d', d(tt, 2));
+      fill.setAttribute('d', mid + 'L1460 110L-20 110Z');
+    }
+    render(0);
+    if (REDUCED) return;
+    var job = { active:false, step:function(dt, now){ render(now); } };
+    Loop.add(job);
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ job.active = es[0].isIntersecting; if (job.active) Loop.wake(); }).observe(el);
+    } else { job.active = true; Loop.wake(); }
+  });
+})();
+
+/* ---------- quote form: composes a text message ---------- */
+(function(){
+  var PHONE = '+15199912813';
+  var SERVICES = ['Gutter & eavestrough cleaning','Downspout flushing','Roof cleaning','Moss removal','Soffit & fascia cleaning','Full exterior cleaning','Minor gutter repairs','Ground cleanup'];
+  var HEIGHTS = ['1 storey','2 storeys','3+ storeys','Commercial'];
+  var CHECK = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  function chips(id, name, items, type){
+    var box = document.getElementById(id);
+    box.innerHTML = items.map(function(s){
+      return '<label class="chip"><input type="' + type + '" name="' + name + '" value="' + s.replace(/&/g, '&amp;') + '"><span>' + CHECK + s.replace(/&/g, '&amp;') + '</span></label>';
+    }).join('');
+  }
+  chips('svcChips', 'svc', SERVICES, 'checkbox');
+  chips('heightChips', 'height', HEIGHTS, 'radio');
+
+  var photo = document.getElementById('photoText');
+  photo.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent("Hi Gutter Guys! I'd like a free quote. Here's a photo of my gutters:");
+
+  document.querySelectorAll('.row[data-service]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var box = document.querySelector('#svcChips input[value="' + a.dataset.service + '"]');
+      if (box) box.checked = true;
+      document.getElementById('f-svc').classList.remove('invalid');
+    });
+  });
+
+  var form = document.getElementById('qform');
+  function val(id){ return document.getElementById(id).value.trim(); }
+  function mark(id, bad){ document.getElementById(id).classList.toggle('invalid', bad); return bad; }
+  form.addEventListener('input', function(e){
+    var f = e.target.closest('.field'); if (f && f.classList.contains('invalid')) f.classList.remove('invalid');
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = val('name'), addr = val('addr'), notes = val('notes');
+    var svc = [].map.call(form.querySelectorAll('input[name=svc]:checked'), function(i){ return i.value; });
+    var h = form.querySelector('input[name=height]:checked');
+    var bad = [mark('f-name', !name), mark('f-addr', !addr), mark('f-svc', !svc.length)];
+    var first = ['name', 'addr', 'svcChips'][bad.indexOf(true)];
+    if (first){ var el = document.getElementById(first); (el.querySelector ? (el.querySelector('input') || el) : el).focus(); return; }
+    var body = "Hi Gutter Guys! I'd like a free quote.\n" +
+      'Name: ' + name + '\n' +
+      'Address: ' + addr + '\n' +
+      'Need: ' + svc.join(', ') + '\n' +
+      (h ? 'Building: ' + h.value + '\n' : '') +
+      (notes ? 'Notes: ' + notes : '');
+    var url = 'sms:' + PHONE + '?&body=' + encodeURIComponent(body.trim());
+    var sent = document.getElementById('sent');
+    sent.innerHTML = 'Your messages app should open with this filled in. If it didn’t, call <a href="tel:' + PHONE + '"><b>519-991-2813</b></a>.';
+    sent.classList.add('show');
+    window.__lastSms = url;
+    location.href = url;
+  });
+})();
+</script>
+</body>
+</html>
