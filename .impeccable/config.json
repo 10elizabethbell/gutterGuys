@@ -14,6 +14,42 @@
         "value": "sizes: 16px, 18px, 20px, 22px (ratio 1.4:1)",
         "createdAt": "2026-10-19T01:44:45.324Z",
         "reason": "agent: these are the body/label tiers only; hierarchy comes from the 36-90px heavy italic display headings the detector's list omits"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(143, 182, 245)",
+        "createdAt": "2026-10-19T02:00:20.278Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (ghost button stroke)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#5b6f8f",
+        "createdAt": "2026-10-19T02:00:20.367Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (placeholder, raised for 5:1 contrast in audit)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-19T02:00:20.440Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (focus-ring corner)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-19T02:00:20.513Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (desktop header/footer wordmark)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "6rem",
+        "createdAt": "2026-10-19T02:00:20.584Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (desktop h1 cap, craft-floor display max)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "40px",
+        "createdAt": "2026-10-19T02:00:20.651Z",
+        "reason": "agent: shipped value predating DESIGN.md, documented as a one-off in the component notes; DESIGN.md was derived from this build (step numeral)"
       }
     ]
   }
